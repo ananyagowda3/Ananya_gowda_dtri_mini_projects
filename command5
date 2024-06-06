@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main(int argc, char *argv[]) {
+    int opt;
+    int base,heigth,area=0;
+
+    for(int i=1;i<argc;i++)
+    {
+        base=atof(argv[1]);
+        heigth=atof(argv[2]);
+    }
+    area=0.5*base*heigth;
+    printf("Area of triangle is %d\n",area);
+    return 0;
+}
